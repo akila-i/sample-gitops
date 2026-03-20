@@ -8,7 +8,7 @@ metadata:
 spec:
   # Template Variable Reference (processed by controller):
   # ${metadata.workflowRunName}  - WorkflowRun CR name
-  # ${metadata.namespace}    - Enforced workflow namespace (workflows-<namespaceName>)
+  # ${metadata.namespace}    - Enforced workflow namespace (workflows-<namespace>)
   # ${parameters.*}              - Developer-provided values from parameters schema
 
   # Schema definition for workflows
@@ -63,7 +63,7 @@ spec:
       arguments:
         parameters:
           - name: namespace-name
-            value: ${metadata.namespaceName}
+            value: ${metadata.namespace}
           # Scope parameters
           - name: scope-all
             value: ${parameters.scope.all}

@@ -12,7 +12,7 @@ spec:
       value: "doclet"
     - key: DB_USER
       value: "doclet"
-    image: host.k3d.internal:10082/doclet-document-svc-image:v1-4a2acc61
+    image: ttl.sh/openchoreo-builds/doclet-document-svc-image:v1-4a2acc61
   endpoints:
     http:
       type: HTTP
